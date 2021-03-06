@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Archivos-trabajo\\Pokedex\\App\\Pokedex\\Pokedex.API\\Pokedex.API.csproj": {}
+    "C:\\Archivos-trabajo\\Pokedex\\Repo\\Pokedex\\app\\Pokedex.API\\Pokedex.API.csproj": {}
   },
   "projects": {
-    "C:\\Archivos-trabajo\\Pokedex\\App\\Pokedex\\Pokedex.API\\Pokedex.API.csproj": {
+    "C:\\Archivos-trabajo\\Pokedex\\Repo\\Pokedex\\app\\Pokedex.API\\Pokedex.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Archivos-trabajo\\Pokedex\\App\\Pokedex\\Pokedex.API\\Pokedex.API.csproj",
+        "projectUniqueName": "C:\\Archivos-trabajo\\Pokedex\\Repo\\Pokedex\\app\\Pokedex.API\\Pokedex.API.csproj",
         "projectName": "Pokedex.API",
-        "projectPath": "C:\\Archivos-trabajo\\Pokedex\\App\\Pokedex\\Pokedex.API\\Pokedex.API.csproj",
+        "projectPath": "C:\\Archivos-trabajo\\Pokedex\\Repo\\Pokedex\\app\\Pokedex.API\\Pokedex.API.csproj",
         "packagesPath": "C:\\Users\\Jose.Ponte\\.nuget\\packages\\",
-        "outputPath": "C:\\Archivos-trabajo\\Pokedex\\App\\Pokedex\\Pokedex.API\\obj\\",
+        "outputPath": "C:\\Archivos-trabajo\\Pokedex\\Repo\\Pokedex\\app\\Pokedex.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jose.Ponte\\AppData\\Roaming\\NuGet\\NuGet.Config",

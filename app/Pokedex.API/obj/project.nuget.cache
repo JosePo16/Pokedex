@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lWLyhc3pH6aLJt5OtCRAuG6PlzxZFPSvu+7atoKrhjGBRBI+FgHFSH8eOYGDgiheKCCR7R6Yx7pjD7x4BLzI5A==",
+  "dgSpecHash": "qLQSDP8WU7qnjAKz8bXqLW8QBrUwxomf9UawInm6YYVgBok7dv0zBgmGeFcasfoFnu6mQLXPnKK4DmCQqFGHsw==",
   "success": true,
-  "projectFilePath": "C:\\Archivos-trabajo\\Pokedex\\App\\Pokedex\\Pokedex.API\\Pokedex.API.csproj",
+  "projectFilePath": "C:\\Archivos-trabajo\\Pokedex\\Repo\\Pokedex\\app\\Pokedex.API\\Pokedex.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jose.Ponte\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Jose.Ponte\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
