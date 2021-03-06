@@ -19,7 +19,7 @@ namespace Pokedex.API.Controllers
         [HttpGet]
         public PokemonGetAllResponse GetAll()
         {
-            return new PokemonGetAllResponse { lstPokemon = _pokemonAppService.GetAll(), Domain = ""};
+            return new PokemonGetAllResponse { lstPokemon = _pokemonAppService.GetAll()};
         }
         [HttpGet]
         public PokemonGetByFilterResponse GetById(PokemonGetByIdRequest request)
