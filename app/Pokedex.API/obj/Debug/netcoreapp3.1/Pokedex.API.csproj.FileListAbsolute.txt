@@ -115,7 +115,6 @@ C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Pokedex.API\bin\Debug\netcoreapp3.1
 C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Pokedex.API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Pokedex.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Pokedex.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Pokedex.API\obj\Debug\netcoreapp3.1\Pokedex.API.csprojAssemblyReference.cache
 C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Pokedex.API\obj\Debug\netcoreapp3.1\Pokedex.API.AssemblyInfoInputs.cache
 C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Pokedex.API\obj\Debug\netcoreapp3.1\Pokedex.API.AssemblyInfo.cs
 C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Pokedex.API\obj\Debug\netcoreapp3.1\Pokedex.API.csproj.CoreCompileInputs.cache

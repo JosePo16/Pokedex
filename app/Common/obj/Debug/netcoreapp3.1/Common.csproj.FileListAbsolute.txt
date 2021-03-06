@@ -1,7 +1,6 @@
 C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Common\bin\Debug\netcoreapp3.1\Common.deps.json
 C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Common\bin\Debug\netcoreapp3.1\Common.dll
 C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Common\bin\Debug\netcoreapp3.1\Common.pdb
-C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Common\obj\Debug\netcoreapp3.1\Common.csprojAssemblyReference.cache
 C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
 C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
 C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
