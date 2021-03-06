@@ -9,5 +9,6 @@ namespace Pokedex.API.Infraestructure.Transport.Pokemon.Response
     public class PokemonGetAllResponse
     {
         public List<PokemonDTO> lstPokemon { get; set; }
+        public string Domain { get; set; }  
     }
 }

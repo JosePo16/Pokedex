@@ -127,3 +127,4 @@ C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Pokedex.API\obj\Debug\netcoreapp3.1
 C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Pokedex.API\obj\Debug\netcoreapp3.1\Pokedex.API.dll
 C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Pokedex.API\obj\Debug\netcoreapp3.1\Pokedex.API.pdb
 C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Pokedex.API\obj\Debug\netcoreapp3.1\Pokedex.API.genruntimeconfig.cache
+C:\Archivos-trabajo\Pokedex\Repo\Pokedex\app\Pokedex.API\obj\Debug\netcoreapp3.1\Pokedex.API.csprojAssemblyReference.cache
