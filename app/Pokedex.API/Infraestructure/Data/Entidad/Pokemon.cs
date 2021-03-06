@@ -20,5 +20,7 @@ namespace Pokedex.API.Infraestructure.Data.Entidad
         public int BaseSpAttack { get; set; }
         public int BaseSpDefense { get; set; }
         public int BaseSpeed { get; set; }
+        public string RutaMiniatura { get; set; }
+        public string RutaImagen { get; set; }
     }
 }

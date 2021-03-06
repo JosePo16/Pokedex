@@ -74,6 +74,14 @@ namespace Pokedex.API.Infraestructure.Data.Entidad
                     .HasMaxLength(6)
                     .HasColumnName("namejapanese");
 
+                entity.Property(e => e.RutaImagen)
+                    .HasMaxLength(40)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.RutaMiniatura)
+                    .HasMaxLength(40)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.Type0)
                     .IsRequired()
                     .HasMaxLength(8)
