@@ -28,13 +28,14 @@
     <None Remove="ClientApp\src\app\agents\pokemon\pokemon-agent.ts" />
     <None Remove="ClientApp\src\app\agents\pokemon\request\list-pokemon-by-id-request.ts" />
     <None Remove="ClientApp\src\app\agents\pokemon\request\list-pokemon-by-name-request.ts" />
+    <None Remove="ClientApp\src\app\agents\pokemon\request\list-pokemon-by-range-request.ts" />
     <None Remove="ClientApp\src\app\agents\pokemon\response\list-pokemon-all-response.ts" />
     <None Remove="ClientApp\src\app\components\buscador\buscador.component.ts" />
     <None Remove="ClientApp\src\app\components\detalle\detalle.component.ts" />
     <None Remove="ClientApp\src\app\components\principal\principal.component.ts" />
     <None Remove="ClientApp\src\app\models\dto\pokemon-dto.ts" />
-    <None Remove="ClientApp\src\app\services\pokemon-service.ts" />
-    <None Remove="ClientApp\src\app\services\storage-service.ts" />
+    <None Remove="ClientApp\src\app\services\pokemon.service.ts" />
+    <None Remove="ClientApp\src\app\services\storage.service.ts" />
     <None Remove="ClientApp\src\app\shared\constants.ts" />
   </ItemGroup>
 
@@ -43,13 +44,14 @@
     <TypeScriptCompile Include="ClientApp\src\app\agents\pokemon\pokemon-agent.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\agents\pokemon\request\list-pokemon-by-id-request.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\agents\pokemon\request\list-pokemon-by-name-request.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\agents\pokemon\request\list-pokemon-by-range-request.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\agents\pokemon\response\list-pokemon-all-response.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\components\buscador\buscador.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\components\detalle\detalle.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\components\principal\principal.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\models\dto\pokemon-dto.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\services\pokemon-service.ts" />
-    <TypeScriptCompile Include="ClientApp\src\app\services\storage-service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\pokemon.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\storage.service.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\shared\constants.ts" />
   </ItemGroup>
 

@@ -25,6 +25,14 @@ namespace Pokedex.API.Application.Pokemon
             return retorno;
         }
 
+        public List<PokemonDTO> GetByRange(int rango_ini, int rango_fin)
+        {
+            List<PokemonDTO> retorno = null;
+            var lstpokemon = _dbContext.Pokemons.Where(x => x.Id == rango_ini || x.Id <= rango_fin).ToList();
+            retorno = _mapper.Map<List<PokemonDTO>>(lstpokemon);
+            return retorno;
+        }
+
         public PokemonDTO GetById(int id)
         {
             PokemonDTO retorno = null;

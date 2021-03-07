@@ -9,6 +9,10 @@ section {
   margin-bottom: 20px;
 }
 
+.centrar {
+  justify-content: center;
+}
+
 .details-card {
   background: #ecf0f1;
 }

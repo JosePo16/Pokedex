@@ -22,6 +22,11 @@ namespace Pokedex.API.Controllers
             return new PokemonGetAllResponse { lstPokemon = _pokemonAppService.GetAll()};
         }
         [HttpGet]
+        public PokemonGetAllResponse GetRange(PokemonGetRangeRequest request)
+        {
+            return new PokemonGetAllResponse { lstPokemon = _pokemonAppService.GetByRange(request.Ini, request.Fin) };
+        }
+        [HttpGet]
         public PokemonGetByFilterResponse GetById(PokemonGetByIdRequest request)
         {
             return new PokemonGetByFilterResponse { oPokemon = _pokemonAppService.GetById(request.Id) };
