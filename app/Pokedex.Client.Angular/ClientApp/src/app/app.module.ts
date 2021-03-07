@@ -10,9 +10,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { DetalleComponent } from './components/detalle/detalle.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
-
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { FiltroComponent } from './components/filtro/filtro.component';
 
 import { PokemonAgent } from './agents/pokemon/pokemon-agent';
 import { NgForIfEmpty } from './shared/ngforifempty';
@@ -25,8 +23,7 @@ import { NgForIfEmpty } from './shared/ngforifempty';
     PrincipalComponent,
     DetalleComponent,
     BuscadorComponent,
-    CounterComponent,
-    FetchDataComponent,
+    FiltroComponent,
     NgForIfEmpty
   ],
   imports: [
@@ -35,8 +32,6 @@ import { NgForIfEmpty } from './shared/ngforifempty';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: PrincipalComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
     ]),
     AutocompleteLibModule,
   ],

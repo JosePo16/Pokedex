@@ -4,45 +4,45 @@
 
 
 <app-buscador (enviar)="MostarPokemonFiltrado($event)"></app-buscador>
-
-<section class="details-card">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 down" *ngFor="let item of lstPokemon; ifEmpty emptyTemplate">
-        <div class="card-content">
-          <div class="card-img">
-            <img src="{{item.rutaMiniatura}}" alt="">
-            <span><h4>N.°{{item.numero}}</h4></span>
-          </div>
-          <div class="card-desc">
-            <h3>{{item.nameenglish}}</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
-              voluptas totam
-            </p>
-            <a href="#" class="btn-card">Ver</a>
+<app-filtro></app-filtro>
+  <section class="details-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 down" *ngFor="let item of lstPokemon; ifEmpty emptyTemplate">
+          <div class="card-content">
+            <div class="card-img">
+              <img src="{{item.rutaMiniatura}}" alt="">
+              <span><h4>N.°{{item.numero}}</h4></span>
+            </div>
+            <div class="card-desc">
+              <h3>{{item.nameenglish}}</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                voluptas totam
+              </p>
+              <a href="#" class="btn-card">Ver</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <ng-template #nopokemon>
-    <div class="row">
-      <div>No se ha encontrado ningún Pokémon.</div>
-    </div>
-  </ng-template>
-  <ng-template #emptyTemplate>
-    <div class="row">
-      
-    </div>
-  </ng-template>
-  <hr />
-  <div class="container">
-    <div class="row centrar">
-      <button type="button" class="btn btn-info" (click)="CargarPokemon()">Cargar más Pokémon</button>
-    </div>
-  </div>
-</section>
+    <ng-template #nopokemon>
+      <div class="row">
+        <div>No se ha encontrado ningún Pokémon.</div>
+      </div>
+    </ng-template>
+    <ng-template #emptyTemplate>
+      <div class="row">
 
-<div class="container">
-</div>
+      </div>
+    </ng-template>
+    <hr />
+    <div class="container">
+      <div class="row centrar">
+        <button type="button" class="btn btn-info" (click)="CargarPokemon()">Cargar más Pokémon</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+  </div>
