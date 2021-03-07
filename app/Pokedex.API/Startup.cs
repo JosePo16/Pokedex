@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Pokedex.API.Infraestructure.Crosscutting.Dependencies;
-using Pokedex.API.Infraestructure.Crosscutting.Mapping;
-using Pokedex.API.Infraestructure.Data.Entidad;
+using Pokedex.API.Infrastructure.Crosscutting.Dependencies;
+using Pokedex.API.Infrastructure.Crosscutting.Mapping;
+using Pokedex.API.Infrastructure.Data.Entities;
 
 namespace Pokedex.API
 {

@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Pokedex.API.Application.Pokemon;
-using Pokedex.API.Infraestructure.Transport.Pokemon.Request;
-using Pokedex.API.Infraestructure.Transport.Pokemon.Response;
+using Pokedex.API.Infrastructure.Transport.Pokemon.Request;
+using Pokedex.API.Infrastructure.Transport.Pokemon.Response;
 
 namespace Pokedex.API.Controllers
 {

@@ -2,7 +2,7 @@
 using Pokedex.API.Application.Pokemon;
 using Pokedex.API.Application.Tipo;
 
-namespace Pokedex.API.Infraestructure.Crosscutting.Dependencies
+namespace Pokedex.API.Infrastructure.Crosscutting.Dependencies
 {
     public static class PokedexDependenciesConfiguration
     {

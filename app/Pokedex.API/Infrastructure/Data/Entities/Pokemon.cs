@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace Pokedex.API.Infraestructure.Crosscutting.DTO
+#nullable disable
+
+namespace Pokedex.API.Infrastructure.Data.Entities
 {
-    public class PokemonDTO
+    public partial class Pokemon
     {
         public int Id { get; set; }
         public string Nameenglish { get; set; }

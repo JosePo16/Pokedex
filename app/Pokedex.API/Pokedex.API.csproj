@@ -19,7 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Infraestructure\Transport\Tipo\Request\" />
+    <Folder Include="Infrastructure\Data\Context\" />
+    <Folder Include="Infrastructure\Transport\Tipo\Request\" />
   </ItemGroup>
 
 

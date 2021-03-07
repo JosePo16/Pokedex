@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace Pokedex.API.Infraestructure.Data.Entidad
+namespace Pokedex.API.Infrastructure.Data.Entities
 {
     public partial class PokedexContext : DbContext
     {

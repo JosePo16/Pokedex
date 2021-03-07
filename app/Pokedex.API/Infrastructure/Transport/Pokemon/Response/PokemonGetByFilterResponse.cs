@@ -1,10 +1,10 @@
-﻿using Pokedex.API.Infraestructure.Crosscutting.DTO;
+﻿using Pokedex.API.Infrastructure.Crosscutting.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Pokedex.API.Infraestructure.Transport.Pokemon.Response
+namespace Pokedex.API.Infrastructure.Transport.Pokemon.Response
 {
     public class PokemonGetByFilterResponse
     {

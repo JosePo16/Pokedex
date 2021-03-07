@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Pokedex.API.Application.Tipo;
-using Pokedex.API.Infraestructure.Transport.Tipo.Response;
+using Pokedex.API.Infrastructure.Transport.Tipo.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;

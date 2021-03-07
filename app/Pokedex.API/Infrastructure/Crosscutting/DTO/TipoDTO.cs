@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-#nullable disable
-
-namespace Pokedex.API.Infraestructure.Data.Entidad
+namespace Pokedex.API.Infrastructure.Crosscutting.DTO
 {
-    public partial class Tipo
+    public class TipoDTO
     {
         public string English { get; set; }
         public string Chinese { get; set; }

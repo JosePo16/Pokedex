@@ -1,4 +1,4 @@
-﻿using Pokedex.API.Infraestructure.Crosscutting.DTO;
+﻿using Pokedex.API.Infrastructure.Crosscutting.DTO;
 using System.Collections.Generic;
 
 namespace Pokedex.API.Application.Pokemon
