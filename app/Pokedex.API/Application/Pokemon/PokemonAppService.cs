@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Pokedex.API.Infrastructure.Crosscutting.DTO;
+using Pokedex.API.Infrastructure.Data.Context;
 using Pokedex.API.Infrastructure.Data.Entities;
 using System.Collections.Generic;
 using System.Linq;

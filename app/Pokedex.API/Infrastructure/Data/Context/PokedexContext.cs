@@ -1,10 +1,11 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Pokedex.API.Infrastructure.Data.Entities;
 
 #nullable disable
 
-namespace Pokedex.API.Infrastructure.Data.Entities
+namespace Pokedex.API.Infrastructure.Data.Context
 {
     public partial class PokedexContext : DbContext
     {
@@ -24,8 +25,7 @@ namespace Pokedex.API.Infrastructure.Data.Entities
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=PE-LPALQ001124; Database=Pokedex; User ID=sa;Password=1234;");
+                optionsBuilder.UseSqlServer("Name=DbConnection");
             }
         }
 
@@ -74,13 +74,20 @@ namespace Pokedex.API.Infrastructure.Data.Entities
                     .HasMaxLength(6)
                     .HasColumnName("namejapanese");
 
+                entity.Property(e => e.Numero)
+                    .HasMaxLength(3)
+                    .IsUnicode(false)
+                    .HasColumnName("numero");
+
                 entity.Property(e => e.RutaImagen)
                     .HasMaxLength(40)
-                    .IsUnicode(false);
+                    .IsUnicode(false)
+                    .HasColumnName("rutaImagen");
 
                 entity.Property(e => e.RutaMiniatura)
                     .HasMaxLength(40)
-                    .IsUnicode(false);
+                    .IsUnicode(false)
+                    .HasColumnName("rutaMiniatura");
 
                 entity.Property(e => e.Type0)
                     .IsRequired()

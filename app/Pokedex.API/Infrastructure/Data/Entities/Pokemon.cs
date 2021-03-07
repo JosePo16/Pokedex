@@ -8,6 +8,7 @@ namespace Pokedex.API.Infrastructure.Data.Entities
     public partial class Pokemon
     {
         public int Id { get; set; }
+        public string Numero { get; set; }
         public string Nameenglish { get; set; }
         public string Namejapanese { get; set; }
         public string Namechinese { get; set; }

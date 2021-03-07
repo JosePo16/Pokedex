@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Pokedex.API.Infrastructure.Crosscutting.Dependencies;
 using Pokedex.API.Infrastructure.Crosscutting.Mapping;
-using Pokedex.API.Infrastructure.Data.Entities;
+using Pokedex.API.Infrastructure.Data.Context;
 
 namespace Pokedex.API
 {

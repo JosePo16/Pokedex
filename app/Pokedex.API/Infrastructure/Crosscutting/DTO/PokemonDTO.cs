@@ -8,6 +8,7 @@ namespace Pokedex.API.Infrastructure.Crosscutting.DTO
     public class PokemonDTO
     {
         public int Id { get; set; }
+        public string Numero { get; set; }
         public string Nameenglish { get; set; }
         public string Namejapanese { get; set; }
         public string Namechinese { get; set; }
