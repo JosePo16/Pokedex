@@ -4,6 +4,7 @@ import { PokemonDto } from 'src/app/models/dto/pokemon-dto';
 import { PokemonService } from '../../services/pokemon.service';
 import { ListPokemonByRange } from '../../agents/pokemon/request/list-pokemon-by-range-request';
 import { Constants } from '../../shared/constants';
+//import { NgForIfEmpty } from '../../shared/ngforifempty';
 
 @Component({
   selector: 'app-principal',
@@ -20,25 +21,11 @@ export class PrincipalComponent implements OnInit {
     private pokemonService: PokemonService,
     private http: HttpClient) { }
 
-
   ngOnInit() {
     this.ClearLocalStorage();
     this.lstPokemon = [];
     this.GetByRange();
   }
-
-
-  //ngOnInit() {
-  //  this.lstPokemon = [];
-  //  this.http.get('api/pokemon/getall')
-  //    .subscribe(data => {
-  //      this.conversion = data;
-  //      this.lstPokemon = this.conversion;
-
-  //      console.log('prueba', this.lstPokemon);
-  //    });
-  //}
-
 
   GetByRange() {
     
@@ -72,4 +59,12 @@ export class PrincipalComponent implements OnInit {
     this.GetByRange();
     console.log('cargando.. mas pokémon');
   }
+
+  MostarPokemonFiltrado(item: any) {
+    this.lstPokemon = [];
+    this.lstPokemon.push(item);
+  }
 }
+
+
+

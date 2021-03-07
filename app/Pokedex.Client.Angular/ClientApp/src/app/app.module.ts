@@ -15,6 +15,7 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
 import { PokemonAgent } from './agents/pokemon/pokemon-agent';
+import { NgForIfEmpty } from './shared/ngforifempty';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { PokemonAgent } from './agents/pokemon/pokemon-agent';
     DetalleComponent,
     BuscadorComponent,
     CounterComponent,
-    FetchDataComponent    
+    FetchDataComponent,
+    NgForIfEmpty
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

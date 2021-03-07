@@ -32,6 +32,7 @@
     <None Remove="ClientApp\src\app\agents\pokemon\response\list-pokemon-all-response.ts" />
     <None Remove="ClientApp\src\app\components\buscador\buscador.component.ts" />
     <None Remove="ClientApp\src\app\components\detalle\detalle.component.ts" />
+    <None Remove="ClientApp\src\app\components\principal\ngforifempty.ts" />
     <None Remove="ClientApp\src\app\components\principal\principal.component.ts" />
     <None Remove="ClientApp\src\app\models\dto\pokemon-dto.ts" />
     <None Remove="ClientApp\src\app\services\pokemon.service.ts" />
@@ -48,6 +49,7 @@
     <TypeScriptCompile Include="ClientApp\src\app\agents\pokemon\response\list-pokemon-all-response.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\components\buscador\buscador.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\components\detalle\detalle.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\ngforifempty.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\components\principal\principal.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\models\dto\pokemon-dto.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\services\pokemon.service.ts" />

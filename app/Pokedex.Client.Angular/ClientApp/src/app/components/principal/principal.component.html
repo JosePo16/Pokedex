@@ -3,12 +3,12 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
-<app-buscador></app-buscador>
+<app-buscador (enviar)="MostarPokemonFiltrado($event)"></app-buscador>
 
 <section class="details-card">
   <div class="container">
     <div class="row">
-      <div class="col-md-4 down" *ngFor="let item of lstPokemon">
+      <div class="col-md-4 down" *ngFor="let item of lstPokemon; ifEmpty emptyTemplate">
         <div class="card-content">
           <div class="card-img">
             <img src="{{item.rutaMiniatura}}" alt="">
@@ -26,6 +26,16 @@
       </div>
     </div>
   </div>
+  <ng-template #nopokemon>
+    <div class="row">
+      <div>No se ha encontrado ningún Pokémon.</div>
+    </div>
+  </ng-template>
+  <ng-template #emptyTemplate>
+    <div class="row">
+      
+    </div>
+  </ng-template>
   <hr />
   <div class="container">
     <div class="row centrar">

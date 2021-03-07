@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { PokemonService } from '../../services/pokemon.service';
 
 @Component({
@@ -7,6 +7,8 @@ import { PokemonService } from '../../services/pokemon.service';
   styles: []
 })
 export class BuscadorComponent implements OnInit{
+  @Output()
+  enviar: EventEmitter<any> = new EventEmitter<any>();
 
   keyword = 'nameenglish';
   data: any;
@@ -17,12 +19,11 @@ export class BuscadorComponent implements OnInit{
     this.GetAll() 
   }
 
-
   GetAll() {
     this.pokemonService.ListPokemonAll().subscribe((response) => this.data = response.lstPokemon);
   }
 
   selectEvent(item: any) {
-    console.log(item);
+    this.enviar.emit(item);
   }
 }
