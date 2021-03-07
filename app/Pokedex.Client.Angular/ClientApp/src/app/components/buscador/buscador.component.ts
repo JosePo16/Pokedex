@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PokemonService } from '../../services/pokemon-service';
 
 @Component({
   selector: 'app-buscador',
@@ -7,20 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuscadorComponent implements OnInit{
 
-  keyword = 'name';
-  data = [
-    {
-      id: 1,
-      name: 'Usa'
-    },
-    {
-      id: 2,
-      name: 'England'
-    }
-  ];
+  keyword = 'nameenglish';
+  data: any;
 
-  constructor() { }
+  constructor(private pokemonService: PokemonService) { }
 
   ngOnInit(): void {
+    this.GetAll() 
+  }
+
+
+  GetAll() {
+    this.pokemonService.ListPokemonAll().subscribe((response) => this.data = response.lstPokemon);
+  }
+
+  selectEvent(item: any) {
+    console.log(item);
   }
 }

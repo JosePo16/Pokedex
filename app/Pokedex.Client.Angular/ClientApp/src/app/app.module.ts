@@ -14,6 +14,8 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
+import { PokemonAgent } from './agents/pokemon/pokemon-agent';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     ]),
     AutocompleteLibModule,
   ],
-  providers: [],
+  providers: [
+    PokemonAgent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
