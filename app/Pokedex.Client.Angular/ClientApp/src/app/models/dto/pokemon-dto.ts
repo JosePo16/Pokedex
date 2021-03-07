@@ -1,5 +1,6 @@
 export class PokemonDto {
   Id: number;
+  Numero: string;
   Nameenglish: string;
   Namejapanese: string;
   Namechinese: string;

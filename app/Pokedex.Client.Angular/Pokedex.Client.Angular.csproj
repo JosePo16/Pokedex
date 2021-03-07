@@ -25,11 +25,15 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\components\buscador\buscador.component.ts" />
+    <None Remove="ClientApp\src\app\components\detalle\detalle.component.ts" />
+    <None Remove="ClientApp\src\app\components\principal\principal.component.ts" />
     <None Remove="ClientApp\src\app\models\dto\pokemon-dto.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\components\buscador\buscador.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\components\detalle\detalle.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\components\principal\principal.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\models\dto\pokemon-dto.ts" />
   </ItemGroup>
 
