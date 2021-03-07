@@ -24,10 +24,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\components\buscador\buscador.component.ts" />
     <None Remove="ClientApp\src\app\models\dto\pokemon-dto.ts" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\components\buscador\buscador.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\models\dto\pokemon-dto.ts" />
   </ItemGroup>
 
