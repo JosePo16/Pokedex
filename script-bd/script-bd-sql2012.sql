@@ -31,8 +31,7 @@ CREATE TABLE [dbo].[Pokemon](
  CONSTRAINT [PK__Pokemon__3213E83F55D98307] PRIMARY KEY CLUSTERED 
 (
 	[id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
+))
 GO
 INSERT [dbo].[Pokemon] ([id], [numero], [nameenglish], [namejapanese], [namechinese], [namefrench], [type0], [type1], [baseHP], [baseAttack], [baseDefense], [baseSp_Attack], [baseSp_Defense], [baseSpeed], [rutaMiniatura], [rutaImagen]) VALUES (1, N'001', N'Bulbasaur', N'フシギダネ', N'妙蛙种子', N'Bulbizarre', N'Grass', N'Poison', 45, 49, 49, 65, 65, 45, N'/assets/img/miniatura/001.png', N'/assets/img/images/001.png')
 INSERT [dbo].[Pokemon] ([id], [numero], [nameenglish], [namejapanese], [namechinese], [namefrench], [type0], [type1], [baseHP], [baseAttack], [baseDefense], [baseSp_Attack], [baseSp_Defense], [baseSpeed], [rutaMiniatura], [rutaImagen]) VALUES (2, N'002', N'Ivysaur', N'フシギソウ', N'妙蛙草', N'Herbizarre', N'Grass', N'Poison', 60, 62, 63, 80, 80, 60, N'/assets/img/miniatura/002.png', N'/assets/img/images/002.png')
@@ -867,9 +866,9 @@ CREATE TABLE [dbo].[Tipo](
 PRIMARY KEY CLUSTERED 
 (
 	[english] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
-GO
+)
+)
+
 INSERT [dbo].[Tipo] ([english], [chinese], [japanese]) VALUES (N'Bug', N'虫', N'むし')
 INSERT [dbo].[Tipo] ([english], [chinese], [japanese]) VALUES (N'Dark', N'恶', N'あく')
 INSERT [dbo].[Tipo] ([english], [chinese], [japanese]) VALUES (N'Dragon', N'龙', N'ドラゴン')

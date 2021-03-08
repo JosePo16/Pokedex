@@ -3,14 +3,22 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
-<app-buscador (enviar)="MostarPokemonBuscado($event)"></app-buscador>
-<app-filtro (enviar)="MostarPokemonFiltrado($event)"></app-filtro>
+<div class="container">
+  <div class="item">
+    <app-buscador (enviar)="MostarPokemonBuscado($event)"></app-buscador>
+  </div>
+  <div class="item">
+    <app-filtro (enviar)="MostarPokemonFiltrado($event)"></app-filtro>
+  </div>
+</div>
+<!--<app-buscador (enviar)="MostarPokemonBuscado($event)"></app-buscador>
+<app-filtro (enviar)="MostarPokemonFiltrado($event)"></app-filtro>-->
   <section class="details-card">
     <div class="container">
       <div class="row">
-        <ng-container *ngif="lstPokemon.length != ''; else nopokemon">
-          <ng-container>
-            <div class="col-md-4 down" *ngFor="let item of lstPokemon; ifEmpty emptyTemplate">
+        <ng-container *ngIf="lstPokemon.length != ''; else nopokemon">
+          <ng-container *ngFor="let item of lstPokemon">
+            <div class="col-md-4 down">
               <div class="card-content">
                 <div class="card-img">
                   <img src="{{item.rutaMiniatura}}" alt="">
@@ -23,9 +31,9 @@
                     voluptas totam
                   </p>
                   <a href="#" class="btn-card">{{item.type0}}</a>
-                  <ng-container *ngif="item?.type1 != ''">
+                  <ng-container *ngIf="item?.type1 != null">
                     <a href="#" class="btn-card">{{item.type1}}</a>
-                  </ng-container>
+                  </ng-container> 
                 </div>
               </div>
             </div>
