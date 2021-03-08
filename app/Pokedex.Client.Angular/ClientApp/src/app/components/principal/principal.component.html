@@ -7,36 +7,41 @@
 <app-filtro (enviar)="MostarPokemonFiltrado($event)"></app-filtro>
   <section class="details-card">
     <div class="container">
-      <div class="row" >
-        <div class="col-md-4 down" *ngFor="let item of lstPokemon; ifEmpty emptyTemplate">
-          <div class="card-content">
-            <div class="card-img">
-              <img src="{{item.rutaMiniatura}}" alt="">
-              <span><h4>N.°{{item.numero}}</h4></span>
+      <div class="row">
+        <ng-container *ngif="lstPokemon.length != ''; else nopokemon">
+          <ng-container>
+            <div class="col-md-4 down" *ngFor="let item of lstPokemon; ifEmpty emptyTemplate">
+              <div class="card-content">
+                <div class="card-img">
+                  <img src="{{item.rutaMiniatura}}" alt="">
+                  <span><h4>N.°{{item.numero}}</h4></span>
+                </div>
+                <div class="card-desc">
+                  <h3>{{item.nameenglish}}</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
+                    voluptas totam
+                  </p>
+                  <a href="#" class="btn-card">{{item.type0}}</a>
+                  <ng-container *ngif="item?.type1 != ''">
+                    <a href="#" class="btn-card">{{item.type1}}</a>
+                  </ng-container>
+                </div>
+              </div>
             </div>
-            <div class="card-desc">
-              <h3>{{item.nameenglish}}</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, voluptatum! Dolor quo, perspiciatis
-                voluptas totam
-              </p>
-              <a href="#" class="btn-card">{{item.type0}}</a>
-              <a href="#" class="btn-card">{{item.type1}}</a>
-            </div>
+          </ng-container>
+        </ng-container>
+        <ng-template #emptyTemplate>
+          <div class="col-md-4">
           </div>
-        </div>
+        </ng-template>
+        <ng-template #nopokemon>
+          <div class="col-md-4">
+            <div>No se ha encontrado ningún Pokémon.</div>
+          </div>
+        </ng-template>
       </div>
     </div>
-    <ng-template #nopokemon>
-      <div class="row">
-        <div>No se ha encontrado ningún Pokémon.</div>
-      </div>
-    </ng-template>
-    <ng-template #emptyTemplate>
-      <div class="row">
-
-      </div>
-    </ng-template>
     <hr />
     <div class="container">
       <div class="row centrar">
@@ -44,6 +49,5 @@
       </div>
     </div>
   </section>
-
   <div class="container">
   </div>
