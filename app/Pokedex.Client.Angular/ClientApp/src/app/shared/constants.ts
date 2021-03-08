@@ -7,6 +7,7 @@ export class Constants {
   }
 
   static KeyLocalStorage = class {
-    static readonly KEY_RANGO_FIN= "RANGE_FIN";
+    static readonly KEY_RANGO_FIN = "RANGE_FIN";
+    static readonly KEY_LISTA_POKEMON = "POKEMONES";
   }
 }

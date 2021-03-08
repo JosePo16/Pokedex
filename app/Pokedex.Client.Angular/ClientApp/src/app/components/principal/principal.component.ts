@@ -4,7 +4,6 @@ import { PokemonDto } from 'src/app/models/dto/pokemon-dto';
 import { PokemonService } from '../../services/pokemon.service';
 import { ListPokemonByRange } from '../../agents/pokemon/request/list-pokemon-by-range-request';
 import { Constants } from '../../shared/constants';
-//import { NgForIfEmpty } from '../../shared/ngforifempty';
 
 @Component({
   selector: 'app-principal',
@@ -60,9 +59,14 @@ export class PrincipalComponent implements OnInit {
     console.log('cargando.. mas pokémon');
   }
 
-  MostarPokemonFiltrado(item: any) {
+  MostarPokemonBuscado(item: any) {
     this.lstPokemon = [];
     this.lstPokemon.push(item);
+  }
+
+  MostarPokemonFiltrado(tipo: string) {
+    var lstRecuperados = JSON.parse(localStorage.getItem(Constants.KeyLocalStorage.KEY_LISTA_POKEMON));
+    this.lstPokemon = lstRecuperados.filter(pokemon => pokemon.type0 == tipo || pokemon.type1 == tipo);
   }
 }
 

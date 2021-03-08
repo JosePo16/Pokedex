@@ -13,6 +13,7 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
 import { FiltroComponent } from './components/filtro/filtro.component';
 
 import { PokemonAgent } from './agents/pokemon/pokemon-agent';
+import { TipoAgent } from './agents/tipo/tipo-agent';
 import { NgForIfEmpty } from './shared/ngforifempty';
 
 
@@ -36,7 +37,8 @@ import { NgForIfEmpty } from './shared/ngforifempty';
     AutocompleteLibModule,
   ],
   providers: [
-    PokemonAgent
+    PokemonAgent,
+    TipoAgent
   ],
   bootstrap: [AppComponent]
 })

@@ -31,6 +31,7 @@
     <None Remove="ClientApp\src\app\agents\pokemon\request\list-pokemon-by-range-request.ts" />
     <None Remove="ClientApp\src\app\agents\pokemon\response\list-pokemon-all-response.ts" />
     <None Remove="ClientApp\src\app\agents\tipo\path-tipo.ts" />
+    <None Remove="ClientApp\src\app\agents\tipo\response\list-tipo-all-response.ts" />
     <None Remove="ClientApp\src\app\agents\tipo\tipo-agent.ts" />
     <None Remove="ClientApp\src\app\components\buscador\buscador.component.ts" />
     <None Remove="ClientApp\src\app\components\detalle\detalle.component.ts" />
@@ -38,8 +39,10 @@
     <None Remove="ClientApp\src\app\components\principal\ngforifempty.ts" />
     <None Remove="ClientApp\src\app\components\principal\principal.component.ts" />
     <None Remove="ClientApp\src\app\models\dto\pokemon-dto.ts" />
+    <None Remove="ClientApp\src\app\models\dto\tipo-dto.ts" />
     <None Remove="ClientApp\src\app\services\pokemon.service.ts" />
     <None Remove="ClientApp\src\app\services\storage.service.ts" />
+    <None Remove="ClientApp\src\app\services\tipo.service.ts" />
     <None Remove="ClientApp\src\app\shared\constants.ts" />
   </ItemGroup>
 
@@ -51,12 +54,15 @@
     <TypeScriptCompile Include="ClientApp\src\app\agents\pokemon\request\list-pokemon-by-range-request.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\agents\pokemon\response\list-pokemon-all-response.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\agents\tipo\path-tipo.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\agents\tipo\response\list-tipo-all-response.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\agents\tipo\tipo-agent.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\components\buscador\buscador.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\components\detalle\detalle.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\components\filtro\filtro.component.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\src\app\models\dto\tipo-dto.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\services\tipo.service.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\shared\ngforifempty.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\components\principal\principal.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\models\dto\pokemon-dto.ts" />
@@ -67,7 +73,6 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\src\app\agents\base\" />
-    <Folder Include="ClientApp\src\app\agents\tipo\response\" />
     <Folder Include="ClientApp\src\app\agents\tipo\request\" />
   </ItemGroup>
 
